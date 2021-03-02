@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>
+            A mobile Interface Website</title> 
+          <!--  <link rel="StyleSheet" href="style.css">-->
+          <link rel="stylesheet" href="./style.css">
+        
+    </head>
+    <body>
+       <!-- <H1>
+            This is your responsive website with java script
+        </H1>-->
+
+        <div  class ="main">
+           <nav>
+                 <div class="Logo">
+                    <img src="images/logo.png">
+                 </div>
+                  <div class="nav-link">
+                    <ul>
+                       <li><a href="home.html"> Home </a></li>
+                       <li><a href="#"> Phone </a></li>
+                       <li><a href="#"> Accessories </a></li>
+                       <li><a href="#"> Cart </a></li>
+            
+                    </ul>
+                   </div>
+              </nav>
+              <div class="informations">
+                  <div class="Overlay"></div>
+                  <img src="images/mobile.png" class="Mobile">
+                  <div id="circle">
+                      <div class="features one ">
+                          <img src="images/camera.png">
+                          <div>
+                              <h1>
+                                  Camera
+                              </h1>
+                              <p> 12MP,wide Angle Lens </p>
+                          </div>
+                      </div>
+                      <div class="features two">
+                        <img src="images/processor.png">
+                        <div>
+                            <h1>
+                                processor
+                            </h1>
+                            <p> Snapdragon Octa-core 11nm </p>
+                        </div>
+                      </div>
+                      <div class="features three">
+                        <img src="images/display.png">
+                        <div>
+                            <h1>
+                                Display
+                            </h1>
+                            <p> 6.5" Mini-Drop Full Screen </p>
+                        </div>
+                      </div>
+                      <div class="features four">
+                        <img src="images/battery.png">
+                        <div>
+                            <h1>
+                                Battery 
+                            </h1>
+                            <p> 5000mAh, 750Hrs Standby </p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="Controller">
+                  <img src="images/arrow.png" id="upbtn">
+                  <h3> Features </h3>
+                  <img src="images/arrow.png" id="downbtn">
+
+              </div>
+        </div>
+        <script>
+            var circle = document.getElementById("circle");
+            var upbtn = document.getElementById("upbtn");
+            var downbtn = document.getElementById("downbtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+            
+            upbtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+
+            downbtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+            </script>
+    </body>
+</html>
